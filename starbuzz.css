@@ -54,8 +54,37 @@ a:link {
   text-decoration:  none;
   border-bottom:    thin dotted #b76666;
 }
+
 a:visited {
   color:            #675c47;
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
+}
+
+.t4{
+margin: 0 auto;
+}
+
+div#tableContainer {
+    display: table;
+    border-spacing: 10px;
+}
+
+div#tableRow {
+    display: table-row;
+}
+#main {
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  padding: 15px;
+  vertical-align: top;
+}
+
+#sidebar {
+display: table-cell;
+background: #efe5d0 url(images/background.gif) bottom right;
+font-size: 105px;
+padding: 15px;
+vertical-align: top;
 }
