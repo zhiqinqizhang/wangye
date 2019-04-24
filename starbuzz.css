@@ -1,60 +1,51 @@
+
 body { 
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
   margin:           0px;
 }
-
-#header {
+.top{
   background-color: #675c47;
- /* margin:           10px; */
- margin: 10px;
+  margin: 10px;
+  height: 108px;
+  margin: 10px 10px 0px 10px;
+}
+header img#headerSlogan
+{
+  float:right;
+}
+#header
+{
+  background-color: #675c47;
+  margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
-#main {
+
+#main,section#blog {
   display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px; 
-  width: 420px;
-  float: left;
-  vertical-align:top;
+  vertical-align: top;  
 }
 
-#sidebar {
+aside {
   display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
- /* margin:           0px 10px 10px 470px; */
- /* width: 208px; */
- /* float: right; */
- vertical-align: top;
- position: absolute;
- top: 128px;
- right:0px;
- width: 280px;
+  vertical-align: top;
 }
 
-#footer {
+footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  /*margin:           10px; */
-  margin: 0px 10px 10px 10px;
+  margin:           10px;
   font-size:        90%;
-  clear: left;
-}
-#allcontent{
-  width: 800px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #675c47;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1 {
@@ -74,42 +65,106 @@ a:link {
   text-decoration:  none;
   border-bottom:    thin dotted #b76666;
 }
-
 a:visited {
   color:            #675c47;
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
 
-.t4{
-margin: 0 auto;
+#annoyingad{
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 400px;
+
+}
+#allcontent{
+  width: 800px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #675c47;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#tableContainer {
-    display: table;
-    border-spacing: 10px;
+#tableContainer{
+  display: table;
+  border-spacing: 10px;
+
+}
+#tableRow{
+  display: table-row;
 }
 
-#tableRow {
-    display: table-row;
-}
-#drinks {
- 
+#drinks{
+  
   background-color: #efe5d0;
   width: 20%;
-  padding:15px;
+  padding: 15px;
   vertical-align: top;
+  display: table-cell;
+
 }
+
+#s{
+  background-image:url(images/header.gif);
+  
+  width: 400px;
+  height: 100px;
+  float: left;
+
+}
+#q{
+  background-image:url(images/header.gif);
+ 
+  width: 400px;
+  height: 100px;
+  background-position: -400px 0px;
+  float: right;
+
+}
+
 #award{
-    position: absolute;
-    top: 30px;
-    left:365 ;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  line-height: auto;
 }
-#coupon {
+
+#coupon{
   position: fixed;
   top: 350px;
-  left: 0px;
+  left: -200px;
+  transition: all 1s linear;
 }
-#coupon a, img{
-  border: none; 
+
+#coupon img{
+  border: none;
 }
+
+.coupon:hover
+{
+  left:0px ;
+}
+nav{
+  background-color: #efe5d0;
+  margin:10px 10px 0px 10px;
+}
+ nav ul {
+   background-color: #efe5d0;
+   margin: 10px 10px 0px 10px;
+   list-style-type: none;
+   padding: 5px 0px 5px 0px;
+ }
+ nav ul li{
+   display: inline;
+   padding: 5px 10px 5px 10px;
+ }
+ nav ul li a:link, nav ul li a:visited{
+   color: #954b4b;
+   border-bottom: none;
+   font-weight: bold;
+ }
+ nav ul li.selected{
+   background-color: #c8b99c;
+ }
